@@ -1,0 +1,27 @@
+{% extends "gallery.html" %}
+
+{% block content %}
+
+<br/>
+<br/>
+<div class="container">
+
+
+
+	
+		<h2>Register</h2>
+		<form action="/register" method='post'> {% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value='register' />
+		</form>
+
+
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "gallery.html" %}
+
+{% block biowell %}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container">
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8"><h3 align="center">{{ a.title }}</h3>
+      <p align="center">by <a href="/artists/{{a.artist}}"> {{ a.artist }}</a></p>
+
+          <img src="{{ a.url }}" class="img-responsive" align="center" alt="Responsive image">
+          <p></p>
+          <p align="left">{{ a.size }}<span style="float:right;"><b>${{ a.price }}</b></span></p>
+          <p align="left">{{ a.medium }}
+          <span style="float:right;" class="btn btn-warning" href="#" role="button">Buy Me &raquo;</span></p></div>
+  <div class="col-md-2"></div>
+</div>
+    </div>
+
+{% endblock %}
+
